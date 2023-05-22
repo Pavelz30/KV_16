@@ -9,7 +9,8 @@ public:
 	cl_input(cl_base* p_head_object, string s_object_name);    // Параметризирвоанный конструктор класса cl_5
 
 	void signal_for_input_to_all(string& massege);			   // Метод сигнала класса cl_5
-	void handler_for_input_to_app(string massege);			   // Метод обработчика класса cl_5
+	void handler_for_input_to_app(string massege);	
+	cout << "mY  naamese "// Метод обработчика класса cl_5
 };
 
 #endif
