@@ -6,12 +6,14 @@
 class cl_tray : public cl_base                                // Объявление класса cl_3
 {
 	int max_number_of_sheet_in_tray;
-	int number_of_sheet_in_tray;
+	int number_of_sheet;
 public:
-	cl_tray(cl_base* p_head_object, string s_object_name);    // Параметризирвоанный конструктор класса cl_3
-
-	void signal_for_3_class(string& massege);			   // Метод сигнала класса cl_3
-	void handler_for_3_class(string massege);			   // Метод обработчика класса cl_3
+	cl_tray(int number_of_sheet, cl_base* p_head_object, string s_object_name);    // Параметризирвоанный конструктор класса cl_3
+	int get_number_of_sheet();
+	void set_number_of_sheet(int num);
+	void signal_for_tray(string& massege);			   // Метод сигнала класса cl_3
+	void signal_for_display(string& massege);			   // Метод сигнала класса cl_3
+	void handler(string num_of_list_);			   // Метод обработчика класса cl_3
 };
 
 #endif

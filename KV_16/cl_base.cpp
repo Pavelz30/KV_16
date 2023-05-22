@@ -321,7 +321,8 @@ void cl_base::emit_signal(TYPE_SIGNAL p_signal, string s_message)									// Реа
 
 	for (int i = 0; i < connects.size(); i++)														// Цикл для прохода по объектам, связанных с текущим
 	{
-		if (connects[i]->p_signal == p_signal)														// Проверка, что перданный сигнал совпадает с сигналом соединенного объекта
+		if (connects[i]->p_signal == p_signal)							
+							// Проверка, что перданный сигнал совпадает с сигналом соединенного объекта
 		{
 			cl_base* p_target = connects[i]->p_target;												// Инициализация указателя на объект базового класса значеним поля p_target подходящего соединенного объекта
 			TYPE_HANDLER p_handler = connects[i]->p_handler;										// Инициализация указателя на метод обработчика значеним поля p_target подходящего соединенного объекта

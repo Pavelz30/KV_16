@@ -8,8 +8,9 @@ class cl_system_display : public cl_base                                // Объяв
 public:
 	cl_system_display(cl_base* p_head_object, string s_object_name);    // Параметризирвоанный конструктор класса cl_3
 
-	void signal_for_3_class(string& massege);							// Метод сигнала класса cl_3
-	void handler_for_3_class(string massege);							// Метод обработчика класса cl_3
+	
+	//void signal_for_3_class(string& massege);							// Метод сигнала класса cl_3
+	void handler(string massege);							// Метод обработчика класса cl_3
 };
 
 #endif
